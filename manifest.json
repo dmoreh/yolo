@@ -5,6 +5,13 @@
   "description": "This extension turns Submit buttons into YOLO buttons.",
   "version": "1.0",
 
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["yolo.js"]
+    }
+  ],
+
   "permissions": [
     "<all_urls>"
   ]
